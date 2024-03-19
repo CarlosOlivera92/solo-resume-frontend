@@ -1,17 +1,18 @@
 import { INavbarProps } from "@/Data/Interfaces/Navbar";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import styles from "./Navbar.module.css";
 const Navbar = ({ isAuthenticated, username }: INavbarProps) => {
   const location = useLocation();
   const path = location.pathname;
   return (
-    <nav className="navbar">
-      <ul className="nav-items list-unstyled list-inline">
+    <nav className={styles.navbar}>
+      <ul className={styles.navItems}>
         {username ? (
           <>
             <li>
               <NavLink
-                className={`${path === `/portfolio/${username}/personal` ? "active" : ""}`}
+                className={`${path === `/portfolio/${username}/personal` ? `${styles.active}` : ""}`}
                 to={`portfolio/${username}/personal`}
               >
                 Personal
@@ -27,7 +28,7 @@ const Navbar = ({ isAuthenticated, username }: INavbarProps) => {
           <>
             <li>
               <NavLink
-                className={`${path === `/portfolio/${username}/settings` ? "active" : ""}`}
+                className={`${path === `/portfolio/${username}/settings` ? `${styles.active}` : ""}`}
                 to={`portfolio/${username}/settings`}
               >
                 Configuraciones

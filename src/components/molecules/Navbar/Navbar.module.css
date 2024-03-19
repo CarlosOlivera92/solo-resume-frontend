@@ -1,0 +1,60 @@
+.navbar {
+}
+.navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.navItems li {
+    display: inline;
+}
+.navItems li:hover a {
+    display: inline;
+    background-color: #fad6dc;
+    border-radius: .6rem;
+    color: #a63f50;
+    font-weight: bold;
+}
+.navItems li a {
+    padding: 0.4rem;
+    text-decoration: none;
+    margin: 0 .5rem;
+    color:#484644;
+    font-weight: 400;
+}
+.navItems .btn {
+    border-radius: 1rem;
+    border-color: #484644;
+    width: fit-content;
+    margin: .3rem;
+}
+.navItems .btn-logout {
+    border: none;
+    border-radius: .5rem;
+    padding: .4rem;
+    background-color: #fad6dc;
+    color: #D9546A;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.navItems .btn-logout:hover {
+    background-color: #D9546A;
+    color: #fad6dc;
+}
+.navItems .btn:active,
+.navItems .btn:focus {
+    border-color: #D9546A !important;
+    box-shadow: none;
+}
+.navItems .btn a{
+    text-decoration: none;
+    color: #484644;
+}
+.navItems .btn:hover, .navbar .nav-items .btn a:hover {
+    border-color: #D9546A;
+    background-color: #D9546A;
+    color: #fff;
+}

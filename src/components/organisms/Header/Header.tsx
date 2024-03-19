@@ -11,8 +11,8 @@ const Header = () => {
   const isSignupPage = location.pathname === "/signup";
   const isPortfolioPage = location.pathname.startsWith("/portfolio/");
   const headerClass = isPortfolioPage
-    ? `${styles.header} ${styles.portfolioHeader} container`
-    : styles.header;
+    ? `${styles.headerContainer} ${styles.portfolioHeader} container`
+    : styles.headerContainer;
   if (isSignupPage) {
     return null;
   }
