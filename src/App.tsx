@@ -6,6 +6,7 @@ import Home from "@pages/Home/Home";
 import Header from "@components/organisms/Header/Header";
 import { AuthProvider } from "@utils/context/authProvider";
 import { UserProvider } from "@utils/context/userProvider";
+import SignIn from "@pages/SignIn/SignIn";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/signin" element={<SignIn />} />
           </Routes>
         </UserProvider>
       </AuthProvider>
