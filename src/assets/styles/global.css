@@ -33,6 +33,8 @@ textarea,
 button,
 a {
     font-family: "Roboto", sans-serif;
+    font-size: 14px !important;
+
 }
 
 a {
@@ -41,5 +43,28 @@ a {
 
 ul {
     list-style: none;
+}
+h1 {
+    font-size: 28px !important; 
+}
+
+h2 {
+    font-size: 24px !important; 
+}
+
+h3 {
+    font-size: 20px !important; 
+}
+
+h4 {
+    font-size: 18px !important; 
+}
+
+h5 {
+    font-size: 16px !important; 
+}
+
+h6 {
+    font-size: 14px !important; 
 }
 
