@@ -10,8 +10,6 @@
     padding-inline: 1rem;
 }
 
-
-
 /*PORTFOLIO headerContainer*/
 .portfolioHeader {
     padding: 1rem;
@@ -24,4 +22,11 @@
 .portfolioHeader .navbar .nav-items li a.active {
     color: #D9546A ;
     font-weight: bold ;
+}
+@media screen and (max-width: 1024px) {
+    .headerContainer {
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px); /* Agrega un desenfoque al fondo */
+        flex-direction: column;
+    }
 }
